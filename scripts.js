@@ -11,6 +11,17 @@ async function fetchEntries() {
   var sortedParticipants = sortPoints(participants);
   //TODO: remove console.log before deployment
   console.log(sortedParticipants);
+  sortedParticipants.forEach() {
+    participants+= "<tr>";
+      participants+="<th></th>";
+      participants+= "<td>"+`${sortedParticipants.name[i]}`+"</td>";
+      participants+= "<td>"+ `${entry.gsx$username.$t}`+"</td>";
+      participants+= "<td>"+`${entry.gsx$email.$t}`+"</td>";
+      participants+= "<td>"+`${entry.gsx$totalpoints.$t}`+"</td>";
+      participants+= "<tr>";
+      document.getElementById("data").innerHTML = participants;
+  }
+
   return sortedParticipants;
 }
 
